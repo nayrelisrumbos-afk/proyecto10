@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee8ff;
+    margin: 0;
+    padding: 30px;
+    color: #30204f;
+
+}
+
+h1 {
+    text-align: center;
+    color: #6339a5;
+}
+
+h2 {
+    color: #4566c4;
+}
+
+.contenedor {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.pestanas {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.pestanas button {
+    background-color: #b9c9ff;
+    color: #29205c;
+    flex: 1;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.pestanas button:hover {
+    background-color: #9b83df;
+    color: white;
+}
+
+.pestanas button.activa {
+    background-color: #7046b8;
+    color: white;
+}
+
+.contenido {
+    padding: 20px 5px;
+    line-height: 1.6;
+    display: none;
+
+}
+
+.contenido.activo {
+    display: block;
+}
+
+footer {
+    color: #7046b8;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 15px;
+    }
+
+    .contenedor {
+        padding: 15px;
+    }
+
+    .pestanas button {
+        flex-basis: 40%;
+    }
+}
